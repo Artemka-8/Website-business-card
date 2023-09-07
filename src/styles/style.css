@@ -1,0 +1,27 @@
+html{
+  box-sizing: border-box;
+}
+
+*, *::after, *::before{
+  box-sizing: inherit;
+}
+h1, h2, h3, h4, h5, h6, p{
+  margin: 0;
+  padding: 0;
+}
+img{
+  display: block;
+  max-width: 100%;
+}
+body{
+  margin: 0;
+  /* font-family: 'Oswald', sans-serif; 
+  font-weight: 400; */
+}
+:root{
+  --accent-color: #F7654A;
+  --darc-color: #404149;
+  --grey-color:#999999;
+  --white-color:#fff;
+  --background-color: #e5e5e5;
+}
