@@ -80,9 +80,11 @@ body{
   color: var(--white-color);
   text-align: center;
   background-image: url(../img/header-background.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .logo {
-  display: inline-block;
+  display:block;
   margin: 0 auto;
 }
 .h1 {
@@ -142,7 +144,7 @@ body{
   justify-content: space-between;
 }
 .main-text {
-  width: 405px;
+  max-width: 405px;
   margin-bottom: 30px;
   font-size: 20px;
   font-weight: 700;
@@ -152,7 +154,7 @@ body{
   color: var(--accent-color);
 }
 .description {
-  width: 405px;
+  max-width: 405px;
   line-height: 23px; 
   letter-spacing: 0.188px;
 }
@@ -175,12 +177,15 @@ body{
 }
 .we-plan{
   background-image: url(../img/we-plan.png);
+  background-repeat: no-repeat;
 }
 .we-manag{
   background-image: url(../img/we-manage.png);
+  background-repeat: no-repeat;
 }
 .we-build{
   background-image: url(../img/we-build.png);
+  background-repeat: no-repeat;
 }
 
 .opportunity {
@@ -207,7 +212,7 @@ body{
 }
 
 .p-opportunity {
-  width: 405px;
+  max-width: 405px;
   font-size: 11px;
   line-height: 19px; 
   letter-spacing: 0.2px;
@@ -226,6 +231,7 @@ body{
 }
 
 .opportunity-card {
+  max-width: 295px;
   height: 330px;
   padding: 40px 23px;
   margin-right: 27px;
@@ -247,11 +253,13 @@ body{
 }
 
 .request {
-  height: 500px;
+  min-height: 500px;
   background-image: url(../img/build-background.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .request-h2 {
-  width: 350px;
+  max-width: 350px;
   padding-top: 120px;
   margin:0 auto 35px;
   text-align: center;
@@ -285,7 +293,7 @@ body{
 .format {
   display: flex;
   margin: 25px 0;
-  width: 400px;
+  max-width: 400px;
   height: 40px;
   background-color: #fff;
 }
@@ -376,12 +384,86 @@ body{
   font-size: 11px;
   letter-spacing: 0.846px;
 }
-@media screen and (max-width: 1280px) {
-  
+
+@media screen and (max-width: 940px) {
+  .menu {
+    padding: 0 15px;
+  }
+
+  .story {
+    padding: 0 15px;
+  }
+  .story__flex {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .opportunity{
+    padding: 0 15px;
+  }
+  .opportunity__grid-item {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .request {
+    margin-top: 300px;
+  }
+
+  .subscription__grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+  }
+  .subscription-h2 {
+    margin: 30px auto 0;
+  }
+  .format {
+    margin: 0 auto;
+  }
+
+  .navigation__flex {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 670px) {
+  .menu__list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .story-card {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
   
+  .request {
+    margin-top: 700px;
+  }
+
+  .subscription__grid {
+    grid-template-rows: repeat(1, 1fr);
+  }
+  .subscription-h2{
+    padding: 0;
+  }
+  .format {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .text-field__label {
+    padding:11px 50px;
+  }
+  .btn-subscription{
+    margin-top: 10px;
+  }
+  .navigation {
+    padding-top: 70px;
+  }
 }
 
 
