@@ -305,6 +305,7 @@ body{
   font-size: 14px;;
   letter-spacing: 0.07px;
 }
+
 .navigation {
   padding: 46px 0 48px;
   background: #141A20;
@@ -446,6 +447,7 @@ body{
   }
 
   .subscription__grid {
+    padding-bottom: 20px;
     grid-template-rows: repeat(1, 1fr);
   }
   .subscription-h2{
@@ -457,9 +459,6 @@ body{
   }
   .text-field__label {
     padding:11px 50px;
-  }
-  .btn-subscription{
-    margin-top: 10px;
   }
   .navigation {
     padding-top: 70px;

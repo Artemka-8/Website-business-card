@@ -459,6 +459,7 @@ body {
     margin-top: 700px;
   }
   .subscription__grid {
+    padding-bottom: 20px;
     grid-template-rows: repeat(1, 1fr);
   }
   .subscription-h2 {
@@ -470,9 +471,6 @@ body {
   }
   .text-field__label {
     padding: 11px 50px;
-  }
-  .btn-subscription {
-    margin-top: 10px;
   }
   .navigation {
     padding-top: 70px;
